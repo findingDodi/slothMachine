@@ -11,4 +11,4 @@
 * make player play machine beep boop
 * ~~give "opportunity" to start a new game while on machine~~
 * ~~use Game result for exchanging 🦤~~
-* profit
+* pitty-system for testing
