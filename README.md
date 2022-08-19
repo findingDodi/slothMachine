@@ -9,5 +9,6 @@
 
 # ToDos
 * make player play machine beep boop
-* ...
+* give "opportunity" to start a new game while on machine
+* use Game result for exchanging dodo coins
 * profit
