@@ -24,16 +24,22 @@ class ThePlayer:
         pass
 
     def start_shell(self):
-        print('A game contains 4 rounds and costs one dodo coin')
-        start_game = input('Do you want to start a game (y/n)?: ')
-        if start_game == 'y':
-            self.insert_dodo_coin()
-            print('You successfully insert a dodo coin!')
+        print('A game contains 4 rounds and costs 1🦤')
+        keep_playing = True
+        while keep_playing:
+            start_game = input('Do you want to start a game (y/n)?: ')
+            if start_game == 'y':
+                self.insert_dodo_coin()
+                print('You successfully insert 1🦤!')
 
-            for i in range(self.machine.rounds):
-                start_round = input('Please enter 1 to start the round: ')
-                if start_round == '1':
-                    self.play_round()
-                    print(self.machine.round_output)
+                for i in range(self.machine.rounds):
+                    start_round = input('Please enter 1 to start the round: ')
+                    if start_round == '1':
+                        self.play_round()
+                        print(self.machine.round_output)
 
-            print('Game over!')
+                print('This game over!')
+
+            elif start_game == 'n':
+                print('You have', str(self.dodo_coins) + '🦤', 'left!')
+                keep_playing = False
